@@ -27,5 +27,5 @@ app.post( "/api/fileanalyse", multer().single("upfile"), (req,res) =>{
   respObj[ "name"] = req.file.originalname;
   respObj[ "type"] = req.file.mimetype;
   respObj[ "size"] = req.file.size;
-  res.json({ respObj });
+  res.json( respObj );
 });
